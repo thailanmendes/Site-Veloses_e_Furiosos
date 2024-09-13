@@ -41,6 +41,12 @@ header p {
     color: var(--colorText);
 }
 
+section h2 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
 nav ul {
     padding: 0.5rem;
     margin-top: 1rem;
@@ -64,19 +70,24 @@ nav ul li a:hover {
 
 /* Estilo da imagem no cabeçalho */
 header img {
-    width: 100%; /* A imagem ocupará toda a largura */
+    width: 50%; /* A imagem ocupará toda a largura */
     height: auto;
     margin-top: 1rem;
     border-radius: 0.7rem; /* Bordas arredondadas */
+}
+.img-banner{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre as imagens */
 }
 
 /* Estilo da seção de lançamentos */
 .movie-item {
     display: flex;
     align-items: center;
-    margin: 1rem 0;
     padding: 1rem;
-    background-color: #222;
+    background: linear-gradient(rgba(0,0,0,0.1), #222);
     border-radius: 10px;
 }
 
@@ -87,19 +98,21 @@ header img {
     border-top-right-radius: 3rem;
     border-bottom-left-radius: 3rem;
     object-fit: cover;
-    margin-right: 20px; /* Espaçamento entre a imagem e a descrição */
+    margin-right: 1.5rem; /* Espaçamento entre a imagem e a descrição */
+}
+.movie-item img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
 /* Estilo da descrição do filme */
 .movie-description h3 {
-    margin: 0;
-    font-size: 24px;
-    color: #ffcc00; /* Cor amarela */
+    font-size: 2rem;
+    color: var(--colorText); 
 }
 
 .movie-description p {
-    margin-top: 10px;
-    font-size: 16px;
+    margin-top: 1rem;
+    font-size: 1rem;
     color: #ccc; /* Cor mais clara para o texto */
 }
 
