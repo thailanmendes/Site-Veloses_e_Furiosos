@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*paletas de cores */
+:root{
+    --colorFundo : #6582a9;
+    --colorText : #c2dbfc;
+    --corFundo : #0d213a;
+    --preta : #000103;
+    --branca : #ffffff;
+    --paragrafo : Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: var(--corFundo);
+    color: var(--colorText);
+}
+
+header{
+   padding: 2rem;
+}
+
+header h1{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--colorText) ;
+    background: linear-gradient(rgba(0,0,0,0.1), var(--colorFundo));
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.p-center{
+    text-align: center;
+}
+
+header p {
+    font-family:  var(--paragrafo);
+    margin-top: 1rem;
+    color: var(--colorText);
+}
+
+nav ul {
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+    font-size: large;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--colorText); /* Mesma cor do título */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #685eff; /* Altera cor ao passar o mouse */
+}
+
+/* Estilo da imagem no cabeçalho */
+header img {
+    width: 100%; /* A imagem ocupará toda a largura */
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 0.7rem; /* Bordas arredondadas */
+}
+
+/* Estilo da seção de lançamentos */
+.movie-item {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+/* Estilo da imagem do filme */
+.movie-item img {
+    width: 30rem;  /* Largura fixa para a imagem */
+    height: 20rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    object-fit: cover;
+    margin-right: 20px; /* Espaçamento entre a imagem e a descrição */
+}
+
+/* Estilo da descrição do filme */
+.movie-description h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffcc00; /* Cor amarela */
+}
+
+.movie-description p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ccc; /* Cor mais clara para o texto */
+}
+
+.movie-item.right {
+    flex-direction: row-reverse; /* Inverte a ordem: descrição à esquerda e imagem à direita */
+}
+
+.movie-item.right img {
+    margin-right: 0;
+    margin-left: 20px; /* Espaço entre a descrição e a imagem */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .movie-item {
+        flex-direction: column; /* Alinha verticalmente em telas menores */
+        text-align: center;
+    }
+
+    .movie-item img {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .movie-item.right {
+        flex-direction: column;
+    }
+}
