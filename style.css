@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 /*paletas de cores */
 :root{
@@ -23,67 +26,68 @@ div{
 
 header{
    padding: 2rem;
+   min-height: 100vh;
 }
 
 header h1{
     text-align: center;
-    font-size: xx-large;
-    font-weight: bold;
-    font-style: italic;
+    font-size: 3rem;
     color: var(--colorText) ;
-    background: linear-gradient(rgba(0,0,0,0.1), var(--colorFundo));
+    background: linear-gradient(to bottom, var(--corFundo)10% ,var(--colorFundo),  var(--corFundo));
     padding: 2rem;
     border-radius: 1rem;
 }
-.h2-center{
-    text-align: center;
-    margin-top: 1.5rem;
-}
 
-section h2{
-    margin-bottom: 1rem;
-}
-
-header p {
+header h2 {
     font-family:  var(--paragrafo);
     margin-top: 1rem;
     color: var(--colorText);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1rem;
 }
 
-section h2 {
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: underline;
+header h3{
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+section p {
+    font-family: "Oxygen", Arial, Helvetica, sans-serif;
 }
 
 nav ul {
+    background: linear-gradient(to bottom, var(--corFundo)10% ,var(--colorFundo),  var(--corFundo));
     padding: 0.5rem;
     margin-top: 1rem;
-    border-bottom: solid #00010343;
+    border-radius: 1rem;
 }
 
 nav ul li {
+    padding: 0.5rem;
     display: inline;
-    margin-right: 1rem;
-    font-size: large;
+    margin-right: 2rem;
+    font-size: 1rem;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: var(--colorText); /* Mesma cor do título */
+    color: #ffffffe0; /* Mesma cor do título */
     font-weight: bold;
+    font-size: 2rem;
 }
 
 nav ul li a:hover {
-    color: #685eff; /* Altera cor ao passar o mouse */
+    color: var(--colorFundo); /* Altera cor ao passar o mouse */
 }
 
 /* Estilo da imagem no cabeçalho */
 header img {
     width: 49%; /* A imagem ocupará toda a largura */
-    height: auto;
-    border-radius: 0.7rem; /* Bordas arredondadas */
+    border-radius: 1.7rem; /* Bordas arredondadas */
 }
+
 .img-banner{
     display: inline-flex;
     justify-content: center;
