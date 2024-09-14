@@ -1,154 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /*paletas de cores */
-:root{
-    --colorFundo : #6582a9;
-    --colorText : #c2dbfc;
-    --corFundo : #0d213a;
-    --preta : #000103;
-    --branca : #ffffff;
-    --paragrafo : Verdana, Geneva, Tahoma, sans-serif;
+:root {
+  --colorFundo: #6582a9;
+  --colorText: #c2dbfc;
+  --corFundo: #0d213a;
+  --preta: #000103;
+  --branca: #ffffff;
+  --paragrafo: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body{
-    background-color: var(--corFundo);
-    color: var(--colorText);
+body {
+  background-color: var(--corFundo);
+  color: var(--colorText);
 }
 
-header{
-   min-height: 100vh;
+header {
+  min-height: 100vh;
 }
 
-header h1{
-    text-align: center;
-    font-size: 4rem;
-    color: var(--colorText) ;
-    background: linear-gradient(to bottom, #0d213a8b, #6583a93b, #0d213a8b);
-    padding: 3rem;
-    border-radius: 1rem;
-    margin-bottom: 2rem;
+header h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--colorText);
+  background: linear-gradient(to bottom, #0d213a8b, #6583a93b, #0d213a8b);
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
 }
 
 header h2 {
-    font-family:  var(--paragrafo);
-    margin-top: 1rem;
-    color: var(--colorText);
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 1rem;
+  font-family: var(--paragrafo);
+  margin-top: 1rem;
+  color: var(--colorText);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1rem;
 }
 
-header h3{
-    font-family: "Roboto Mono", monospace;
-    font-size: 1.5rem;
-    font-style: italic;
-    background: linear-gradient(to top, #0d213a8b, #6583a93b, #0d213a8b);
-    padding: 1rem;
-    text-align: center;
+header h3 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  font-style: italic;
+  background: linear-gradient(to top, #0d213a8b, #6583a93b, #0d213a8b);
+  padding: 1rem;
+  text-align: center;
 }
 
 section p {
-    font-family: "Oxygen", Arial, Helvetica, sans-serif;
-    font-size: 1.1rem; /* Aumenta o tamanho da fonte */
+  font-family: "Oxygen", Arial, Helvetica, sans-serif;
+  font-size: 1.1rem; /* Aumenta o tamanho da fonte */
 }
 
 nav ul {
-    background: linear-gradient(to top, #0d213a8b, #6583a93b, #0d213a8b);
-    padding: 0.5rem;
-    margin-top: 1rem;
-    border-radius: 1rem;
+  background: linear-gradient(to top, #0d213a8b, #6583a93b, #0d213a8b);
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
 }
 
 nav ul li {
-    padding: 0.5rem;
-    display: inline;
-    margin-right: 2rem;
-    font-size: 1rem;
+  padding: 0.5rem;
+  display: inline;
+  margin-right: 2rem;
+  font-size: 1rem;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #ffffffe0; /* Mesma cor do título */
-    font-weight: bold;
-    font-size: 2rem;
+  text-decoration: none;
+  color: #ffffffe0; /* Mesma cor do título */
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 nav ul li a:hover {
-    color: var(--colorFundo); /* Altera cor ao passar o mouse */
+  color: var(--colorFundo); /* Altera cor ao passar o mouse */
 }
-
 
 /* Estilo da imagem no cabeçalho */
 header img {
-    width: 49%; /* A imagem ocupará toda a largura */
-    border-radius: 1.7rem; /* Bordas arredondadas */
+  width: 49%; /* A imagem ocupará toda a largura */
+  border-radius: 1.7rem; /* Bordas arredondadas */
 }
 
-.img-banner{
-    display: inline-flex;
-    justify-content: center;
-    margin-top: 0.5rem;
-    gap: 1rem; /* Espaçamento entre as imagens */
+.img-banner {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  gap: 1rem; /* Espaçamento entre as imagens */
 }
 
 /* Estilo da seção de lançamentos */
 .movie-item {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 /* Estilo da imagem do filme */
 .movie-item img {
-    width: 30rem;  /* Largura fixa para a imagem */
-    height: 20rem;
-    border-top-right-radius: 3rem;
-    border-bottom-left-radius: 3rem;
-    object-fit: cover;
-    margin-right: 1.5rem; /* Espaçamento entre a imagem e a descrição */
+  width: 30rem; /* Largura fixa para a imagem */
+  height: 20rem;
+  border-top-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  object-fit: cover;
+  margin-right: 1.5rem; /* Espaçamento entre a imagem e a descrição */
 }
 .movie-item img:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
 /* Estilo da descrição do filme */
 .movie-description h3 {
-    font-size: 3rem;
-    color: var(--colorText); 
-    margin-bottom: 0.5rem;
+  font-size: 3rem;
+  color: var(--colorText);
+  margin-bottom: 0.5rem;
 }
 
 .movie-description p {
-    margin-top: 1rem;
-    font-size: 1rem;
-    color: #ccc; /* Cor mais clara para o texto */
-
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #ccc; /* Cor mais clara para o texto */
 }
 
-.movie-item.left{
-    background: linear-gradient(to bottom, #0d213a8b, #6583a93b, #0d213a8b);
+.movie-item.left {
+  background: linear-gradient(to bottom, #0d213a8b, #6583a93b, #0d213a8b);
 }
 
 .movie-item.right {
-    background: linear-gradient(to top, #0d213a8b, #6583a93b, #0d213a8b);
-    flex-direction: row-reverse; /* Inverte a ordem: descrição à esquerda e imagem à direita */
+  background: linear-gradient(to top, #0d213a8b, #6583a93b, #0d213a8b);
+  flex-direction: row-reverse; /* Inverte a ordem: descrição à esquerda e imagem à direita */
 }
 
-div{
-    margin-top: 1rem;
+div {
+  margin-top: 1rem;
 }
 
 .movie-item.right img {
-    margin-right: 0;
-    margin-left: 20px; /* Espaço entre a descrição e a imagem */
+  margin-right: 0;
+  margin-left: 20px; /* Espaço entre a descrição e a imagem */
 }
-/* Responsividade */
+/* Responsividade 
 @media (max-width: 768px) {
     .movie-item {
         flex-direction: column;
@@ -167,21 +165,77 @@ div{
     nav ul li {
         margin: 10px 0;
     }
-}
-
-/* Responsividade 
-@media (max-width: 768px) {
-    .movie-item {
-        flex-direction: column; /* Alinha verticalmente em telas menores 
-        text-align: center;
-    }
-
-    .movie-item img {
-        margin-bottom: 20px;
-        margin-right: 0;
-    }
-
-    .movie-item.right {
-        flex-direction: column;
-    }
 }*/
+
+/* Responsividade */
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2rem; /* Reduz o tamanho da fonte */
+    padding: 1.5rem;
+  }
+
+  header h2 {
+    font-size: 1.2rem; /* Reduz o tamanho da fonte */
+    margin-top: 0.5rem;
+  }
+
+  header h3 {
+    font-size: 1.2rem; /* Reduz o tamanho da fonte */
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0; /* Espaçamento vertical entre os itens */
+  }
+  nav ul li a {
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .img-banner img {
+    width: 100%; /* Faz as imagens ocuparem toda a largura disponível */
+    margin-bottom: 1rem; /* Adiciona espaçamento entre as imagens */
+  }
+
+  .img-banner {
+    flex-direction: column; /* Alinha as imagens verticalmente */
+    gap: 1rem; /* Espaçamento entre as imagens */
+  }
+
+  .movie-item {
+    flex-direction: column; /* Alinha verticalmente em telas menores */
+    text-align: center;
+  }
+
+  .movie-item img {
+    margin-bottom: 1rem;
+  }
+
+  .movie-item.right {
+    flex-direction: column;
+    margin-right: 1rem;
+  }
+
+  .movie-item.left {
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  .movie-item img:hover {
+    transform: none; /* Retirando o efeito de zoom em tela menor */
+  }
+}
