@@ -54,6 +54,7 @@ header h3{
 
 section p {
     font-family: "Oxygen", Arial, Helvetica, sans-serif;
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte */
 }
 
 nav ul {
@@ -80,6 +81,7 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--colorFundo); /* Altera cor ao passar o mouse */
 }
+
 
 /* Estilo da imagem no cabeçalho */
 header img {
@@ -119,6 +121,7 @@ header img {
 .movie-description h3 {
     font-size: 3rem;
     color: var(--colorText); 
+    margin-bottom: 0.5rem;
 }
 
 .movie-description p {
@@ -145,11 +148,30 @@ div{
     margin-right: 0;
     margin-left: 20px; /* Espaço entre a descrição e a imagem */
 }
-
 /* Responsividade */
 @media (max-width: 768px) {
     .movie-item {
-        flex-direction: column; /* Alinha verticalmente em telas menores */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-item img {
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Responsividade 
+@media (max-width: 768px) {
+    .movie-item {
+        flex-direction: column; /* Alinha verticalmente em telas menores 
         text-align: center;
     }
 
@@ -161,4 +183,4 @@ div{
     .movie-item.right {
         flex-direction: column;
     }
-}
+}*/
