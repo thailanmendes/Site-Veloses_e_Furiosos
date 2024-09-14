@@ -17,6 +17,10 @@ body{
     color: var(--colorText);
 }
 
+div{
+    margin-bottom: 1rem;
+}
+
 header{
    padding: 2rem;
 }
@@ -31,8 +35,13 @@ header h1{
     padding: 2rem;
     border-radius: 1rem;
 }
-.p-center{
+.h2-center{
     text-align: center;
+    margin-top: 1.5rem;
+}
+
+section h2{
+    margin-bottom: 1rem;
 }
 
 header p {
@@ -50,6 +59,7 @@ section h2 {
 nav ul {
     padding: 0.5rem;
     margin-top: 1rem;
+    border-bottom: solid #00010343;
 }
 
 nav ul li {
@@ -70,16 +80,15 @@ nav ul li a:hover {
 
 /* Estilo da imagem no cabeçalho */
 header img {
-    width: 50%; /* A imagem ocupará toda a largura */
+    width: 49%; /* A imagem ocupará toda a largura */
     height: auto;
-    margin-top: 1rem;
     border-radius: 0.7rem; /* Bordas arredondadas */
 }
 .img-banner{
     display: inline-flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px; /* Espaçamento entre as imagens */
+    margin-top: 0.5rem;
+    gap: 1rem; /* Espaçamento entre as imagens */
 }
 
 /* Estilo da seção de lançamentos */
@@ -106,7 +115,7 @@ header img {
 
 /* Estilo da descrição do filme */
 .movie-description h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--colorText); 
 }
 
@@ -114,6 +123,7 @@ header img {
     margin-top: 1rem;
     font-size: 1rem;
     color: #ccc; /* Cor mais clara para o texto */
+
 }
 
 .movie-item.right {
